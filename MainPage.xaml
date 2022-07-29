@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SwipeviewShadows.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <SwipeView>
+                <SwipeView.LeftItems>
+                    <SwipeItems Mode="Execute">
+                        <SwipeItem Text="Delete"
+                                           IconImageSource="delete"
+                                           BackgroundColor="Tomato"/>
+                    </SwipeItems>
+                </SwipeView.LeftItems>
+
+                <SwipeView.RightItems>
+                    <SwipeItems Mode="Execute">
+                        <SwipeItem Text="Add"
+                                           IconImageSource="cart"
+                                           BackgroundColor="LimeGreen"/>
+                    </SwipeItems>
+                </SwipeView.RightItems>
+                <Border Stroke="Black"
+                    StrokeThickness="3"
+                    Padding="10">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="10"/>
+                    </Border.StrokeShape>
+                    <Border.Shadow>
+                        <Shadow Brush="Black"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8" />
+                    </Border.Shadow>
+                    <HorizontalStackLayout Spacing="20">
+                        <VerticalStackLayout WidthRequest="200"
+                                         Spacing="10">
+                            <Label Text="Gigaphone XT16"
+                               FontAttributes="Bold" />
+                            <Label Text="The latest model from Gigaphone features an upgraded camera, more memory and our new AX50 GPU."
+                               LineBreakMode="WordWrap"/>
+                        </VerticalStackLayout>
+
+                        <Label FontAttributes="Bold"
+                           HorizontalTextAlignment="End"
+                           Text="$1,199"/>
+                    </HorizontalStackLayout>
+                </Border>
+            </SwipeView>
+
+            <Border Stroke="Black"
+                    StrokeThickness="3"
+                    Padding="10">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10"/>
+                </Border.StrokeShape>
+                <Border.Shadow>
+                    <Shadow Brush="Black"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8" />
+                </Border.Shadow>
+                <HorizontalStackLayout Spacing="20">
+                    <VerticalStackLayout WidthRequest="200"
+                                         Spacing="10">
+                        <Label Text="Gigaphone XT12"
+                               FontAttributes="Bold" />
+                        <Label Text="The 'little brother'. Has all the same hardware as the flagship XT16 but with a smaller screen."
+                               LineBreakMode="WordWrap"/>
+                    </VerticalStackLayout>
+
+                    <Label FontAttributes="Bold"
+                           HorizontalTextAlignment="End"
+                           Text="$1,099"/>
+                </HorizontalStackLayout>
+            </Border>
+
+            <Border Stroke="Black"
+                    StrokeThickness="3"
+                    Padding="10">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10"/>
+                </Border.StrokeShape>
+                <Border.Shadow>
+                    <Shadow Brush="Black"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8" />
+                </Border.Shadow>
+                <HorizontalStackLayout Spacing="20">
+                    <VerticalStackLayout WidthRequest="200"
+                                         Spacing="10">
+                        <Label Text="Gigaphone AF10"
+                               FontAttributes="Bold" />
+                        <Label Text="This budget friendly model won't break the bank, but doesn't skimp on features either."
+                               LineBreakMode="WordWrap"/>
+                    </VerticalStackLayout>
+
+                    <Label FontAttributes="Bold"
+                           HorizontalTextAlignment="End"
+                           Text="$999"/>
+                </HorizontalStackLayout>
+            </Border>
+
+            <Border Stroke="Black"
+                    StrokeThickness="3"
+                    Padding="10">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10"/>
+                </Border.StrokeShape>
+                <Border.Shadow>
+                    <Shadow Brush="Black"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8" />
+                </Border.Shadow>
+                <HorizontalStackLayout Spacing="20">
+                    <VerticalStackLayout WidthRequest="200"
+                                         Spacing="10">
+                        <Label Text="Gigaphone AF05"
+                               FontAttributes="Bold" />
+                        <Label Text="Our entry level Gigaphone. It looks cool, but doesn't make calls or access the internet. It does play cool jingles though!"
+                               LineBreakMode="WordWrap"/>
+                    </VerticalStackLayout>
+
+                    <Label FontAttributes="Bold"
+                           HorizontalTextAlignment="End"
+                           Text="$699"/>
+                </HorizontalStackLayout>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
